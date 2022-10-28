@@ -42,7 +42,7 @@ const MovieDetails = (props) => {
           ListOfMovies.map((movie, idx) => {
             return (
                idx <4 && <div key={idx}>
-                <img src={movie.image} alt="image" />
+                <img src={movie.image} alt="" />
                 <MovieTitle> {movie.name} </MovieTitle>
                 <MovieTitle style={{ color: "green" }}> Play Now </MovieTitle>
               </div>

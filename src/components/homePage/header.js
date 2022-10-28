@@ -3,7 +3,7 @@ import { BorderLine, GridContainer, HeaderContainer } from "./style";
 const Header = () => {
   return (<>
     <HeaderContainer>
-      <img src='https://thumbs.dreamstime.com/b/dots-logo-7424189.jpg' width="40px" height="40px" alt='image' />
+      <img src='https://thumbs.dreamstime.com/b/dots-logo-7424189.jpg' width="40px" height="40px" alt='' />
       <GridContainer>
         <span style={{ color: "green" }}>Home</span>
         <span>Language</span>

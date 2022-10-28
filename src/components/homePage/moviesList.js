@@ -1,40 +1,39 @@
-import { useEffect, useState } from "react";
 import { ButtonContainer } from "../login/style";
 import { ListOfMovies } from "./shared/listOfMovies";
 import { MoviesContainer, MovieTitle } from "./style";
-import axios from "axios";
+// import axios from "axios";
 
 const MoviesList = (props) => {
   const { setMovieDetails } = props;
   const requestURL = "https://rapidapi.com/";
 
 
-  const moviesData = async () => {
-    try {
-      const config = {
-        headers: {
-          "Content-Type": "application/json",
-          'Access-Control-Allow-Origin': '*',
-          }
-        }
+  // const moviesData = async () => {
+  //   try {
+  //     const config = {
+  //       headers: {
+  //         "Content-Type": "application/json",
+  //         'Access-Control-Allow-Origin': '*',
+  //         }
+  //       }
         
-        const data = {
-          title: "game of"
-         }
+  //       const data = {
+  //         title: "game of"
+  //        }
 
-    await axios
-      .get(requestURL + "title/v2/find", data, config)
-      .then((response) => {
-        console.log("response", response);
-      });
+  //   await axios
+  //     .get(requestURL + "title/v2/find", data, config)
+  //     .then((response) => {
+  //       console.log("response", response);
+  //     });
             
-    } catch (error) {
-     console.log("error", error) 
-    }
-  };
-  useEffect(() => {
-    // moviesData();
-  }, []);
+  //   } catch (error) {
+  //    console.log("error", error) 
+  //   }
+  // };
+  // useEffect(() => {
+  //   // moviesData();
+  // }, []);
 
   return (
     <MoviesContainer>
