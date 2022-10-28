@@ -5,7 +5,7 @@ import { MoviesContainer, MovieTitle } from "./style";
 
 const MoviesList = (props) => {
   const { setMovieDetails } = props;
-  const requestURL = "https://rapidapi.com/";
+  // const requestURL = "https://rapidapi.com/";
 
 
   // const moviesData = async () => {
